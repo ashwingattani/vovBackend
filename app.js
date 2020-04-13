@@ -9,6 +9,10 @@ var usersRouter = require("./routes/users");
 
 var app = express();
 
+app.get("/", (req, res) => {
+  res.send("HEY!");
+});
+
 var server = app.listen(3000, function () {
   console.log("We have started our server on port 3000");
 });
